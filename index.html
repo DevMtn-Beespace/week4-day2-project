@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directivePractice">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lesson Hider -- Week 4, day 2 project</title>
+</head>
+<body ng-controller="lessonCtrl">
+<!-- {{test}} from body of index -->
+<!-- <lesson-hider lesson="test"></lesson-hider> -->
+<!-- <input type="text" ng-model="lesson"> -->
+
+  <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" line-through="lineThrough(lesson)" day-alert="announceDay(lesson, day)"></lesson-hider>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/lessonCtrl.js"></script>
+  <script src="./js/lessonService.js"></script>
+  <script src="./js/lessonHider.js"></script>
+</body>
+</html>
